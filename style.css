@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: linear-gradient(rgb(223, 223, 223), rgb(202, 202, 202));
+    width: 100%;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.app-bar{
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    background-color: orange;
+    box-shadow: 0 0 5px black;
+    color: white;
+    font-size: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.app-bar i{
+    text-decoration: none;
+    color: white;
+}
+
+.app-logo img{
+flex: 2;
+margin-top: 50px;
+width: 100px;
+height: 100px;
+transition: 500ms;
+}
+
+.app-logo img:hover{
+    flex: 2;
+    margin-top: 60px;
+    width: 120px;
+    height: 120px;
+}
+    
+
+
+main{
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+main h1{
+    text-align: center;
+}
+
+
+.items-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+
+.item-card{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+color: white;
+background-color: #333;
+border-radius: 10px;
+box-shadow: 0 0 2px black;
+margin: 10px;
+}
+
+.item-card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.3;
+}
+
+.item-card .card-content{
+    position: relative;
+    padding: 10px;
+}
+
+.item-card .card-content h2{
+   font-size: 20px;
+   margin-bottom: 30px;
+}
+
+.item-card .card-content .item-price{
+    font-size: 26px;
+    font-weight: 200;
+ }
+
+ .item-raiting{
+    display: flex;
+    color: yellow;
+    margin-bottom: 10px;
+ }
+
+ .item-card .item-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ 
+.option-details{
+
+
+ flex: 2;
+ text-decoration: none;
+ color: #333;
+ background-color: white;
+ text-align: center;
+ padding: 10px;
+ border-radius: 20px;
+ font-size: bold;
+ font-size: 12px;
+ cursor: pointer;
+
+ }
+
+ .icon-option {
+display: flex;
+
+background-color: rgba(0, 0, 0, 0.384);
+padding: 10px;
+margin-left: 5px;
+border-radius: 100%;
+}
+
+
+/*details*/
+
+.header-details{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.header-details img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.buy-item .option-details{
+    position: relative;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.right-option{
+    display: flex;
+    z-index: 10;
+}
+
+.header-details .icon-option{
+    z-index: 10;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.527);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.buy-item .option-details a{
+text-decoration: none;
+}
+
+.icon-option a{
+    color: white;
+}
+
+.main-details{
+    width: 100%;
+    position: absolute;
+}
+
+.item-raiting p{
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.item-raiting i{
+    color: rgb(221, 167, 18);
+}
+
+.description-details{
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+
+.galery-details {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.galery-details .galery-image {
+    flex: 1;
+    margin: 5px;
+}
+
+.galery-details .galery-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buy-item{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+
+
+.buy-item .price-item{
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.buy-item .option-details{
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+
+}
+
+/*LIGHTBOX*/
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.lightbox:target{
+    display: block;
+}
+
+.lightbox span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lightbox span p{
+    text-align: center;
+    position: relative;
+    top: 90vh;
+}
+
+/*CONFIRM*/
+
+.order-itens{
+display: flex;
+flex-direction: column  ;
+align-items: center;
+}
+
+.order-itens .order-card{
+    display: flex;
+    background-color: #c4c4c4;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #111;
+}
+
+.order-itens .order-card .card-image{
+    
+    flex: 1;
+
+}
+
+.order-itens .order-card .card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.order-itens .order-card .card-details{
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.order-itens .order-card #item-price{
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.order-itens .button-confirm{
+    margin-top: 30px;
+    background-color: rgb(0, 207, 10);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 80%;
+    padding: 20px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-itens .button-confirm i{
+    margin-right: 10px;
+}

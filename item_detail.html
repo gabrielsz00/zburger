@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+</head>
+<body>
+
+<header class="header-details">
+
+<img src="assets/salada.jpg" alt="x-salada" class="image-item">
+
+
+<div class="option-details">
+
+
+    <a href="index.html">
+
+        <div class="icon-option">
+            <i class='bx bx-arrow-back' ></i>
+        </div>
+    </a>
+
+<div class="right-option">
+
+    <div class="icon-option">
+        <a href="index.html">
+        <i class='bx bx-arrow-back' ></i>
+    </a>
+    </div>
+    
+    <div class="icon-option">
+        <i class='bx bx-heart' ></i>  
+    </div>
+
+    
+</div>
+
+
+
+</div>
+
+
+</header>
+
+<main class="main-details">
+        <h1 class="name-item">X-Salada</h1>
+<section class="information-details">
+    <div class="item-raiting">
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star' ></i>
+        <i class='bx bxs-star-half' ></i>
+        <p>4,5 (200 avaliações)</p>
+    </div>
+
+    <div class="description-details">
+        O X-Salada é um sanduíche composto por pão de hambúrguer, um hambúrguer de carne bovina grelhada, queijo derretido, alface, tomate e cebola. Ele é finalizado com maionese, ketchup e mostarda, destacando-se pela combinação de ingredientes frescos e saborosos.
+    </div>
+
+    <div class="galery-details">
+
+        <a class="galery-image" href="#image01">
+            <img src="assets/salada.jpg" alt="X-Salada">
+        </a>
+
+        <a href="#" class="lightbox" id="image01">
+            <span style="background-image: url(assets/salada.jpg);">
+                <p>Experimente tambem nosso X-Bacon</p>
+            </span>
+        </a>
+
+        <a class="galery-image" href="#image02">
+            <img src="assets/bacon.jpg" alt="X-Bacon">
+        </a>
+
+        <a href="#" class="lightbox" id="image02">
+            <span style="background-image: url(assets/bacon.jpg);">
+                <p>Experimente tambem nosso X-Salada</p>
+            </span>
+        </a>
+
+    </div>
+
+    <div class="buy-item">
+        <p class="price-item">R$ 18,00</p>
+        <a onclick="openConfirmOrder()"  class="option-details" >Comprar</a>
+    </div>
+
+</section>
+
+</main>
+<script>
+    const urlParams = new URLSearchParams(window.location.search)
+    const itemName = urlParams.get('name');
+    const itemPrice = urlParams.get('price');
+    const itemImage = urlParams.get('image');
+    
+
+    const imageDetail = document.querySelector('.image-item');
+    const nameDetail = document.querySelector('.name-item');
+    const priceDetail = document.querySelector('.price-item');
+
+      
+nameDetail.textContent = itemName
+priceDetail.textContent = 'R$ ' + itemPrice
+imageDetail.src = 'assets/'+ itemImage
+
+    console.log(itemName);
+    console.log(itemImage);
+    
+    function openConfirmOrder(){
+        window.open('confirm_order.html?name=' + itemName + '&price=' + itemPrice + '&image=' + itemImage, '_self')
+    }
+    
+    </script>
+
+</body>
+</html>
