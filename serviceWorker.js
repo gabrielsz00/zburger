@@ -1,6 +1,5 @@
 // Nome da key onde ficaram guardados os arquivos
 const staticBurgerIo = "zburguer"
-
 // Lista de aquivos para ser salvos em cache
 const assets = [
     "/",
@@ -15,7 +14,6 @@ const assets = [
     "/assets/frango.jpg",
     "/assets/file.jpg",
 ]
-
 // Salva os arquivos listados em cache
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
@@ -24,7 +22,6 @@ self.addEventListener("install", installEvent => {
         })
     )
 })
-
 // Trazemos os dados salvos em cache
 self.addEventListener("fetch", fetchEvent => {
     fetchEvent.respondWith(

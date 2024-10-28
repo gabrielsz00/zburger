@@ -43,3 +43,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     itensList.innerHTML = output
 })
+
+
+// Registro do Service Worker
+// Verificação se ele é suportado pelo browser
+// Quando a pagina é carregada fazemos o registro
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker
+        .register("/serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err))
+    })
+}
