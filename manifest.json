@@ -1,43 +1,43 @@
 {
-    "name": "EEB Cecília Lotin",
-    "short_name": "Cecília Lotin",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#253bb6",
-    "theme_color": "#253bb6",
-    "orientation": "portrait-primary",
-    "icons": [
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "72x72"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "96x96"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png","sizes": "128x128"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "144x144"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "152x152"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "192x192"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "384x384"
-      },
-      {
-        "src": "/assets/logo.png",
-        "type": "image/png", "sizes": "512x512"
-      }
-    ]
-  }
+  "name": "Zburger",
+  "short_name": "Zburger",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ff4500",
+  "theme_color": "#ff4500",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "72x72"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "96x96"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png","sizes": "128x128"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "144x144"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "152x152"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "192x192"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "384x384"
+    },
+    {
+      "src": "/assets/Logo de Hamburgueria Artesanal.png",
+      "type": "image/png", "sizes": "512x512"
+    }
+  ]
+}
